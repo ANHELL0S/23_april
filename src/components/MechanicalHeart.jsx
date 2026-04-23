@@ -209,7 +209,7 @@ export function MechanicalHeart() {
 							color: '#5a4a6a',
 							letterSpacing: '0.2em',
 						}}>
-						ANGELLO & AMELIA
+						ANGELO & AMELIA
 					</div>
 				</div>
 			)}

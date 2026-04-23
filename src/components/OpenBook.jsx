@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
 import { PAGES } from '../const/page'
 
-/* ── OPEN BOOK ── */
 export function OpenBook({ onDone }) {
-	const [pageIndex, setPageIndex] = useState(-1) // -1 = opening animation
+	const [pageIndex, setPageIndex] = useState(-1)
 	const [flipping, setFlipping] = useState(false)
-	const [flipDir, setFlipDir] = useState('open')
 	const [closing, setClosing] = useState(false)
 
 	useEffect(() => {
@@ -109,23 +107,6 @@ export function OpenBook({ onDone }) {
 									position: 'relative',
 									zIndex: 1,
 								}}>
-								<div
-									style={{ fontSize: '2.8rem', marginBottom: '18px', filter: `drop-shadow(0 0 12px ${cur.accent}80)` }}>
-									{cur.emoji}
-								</div>
-								<div
-									style={{
-										fontFamily: "'Playfair Display',serif",
-										fontSize: 'clamp(0.8rem,1.8vw,1rem)',
-										color: '#8a7a9b',
-										letterSpacing: '0.15em',
-										marginBottom: '16px',
-										textTransform: 'uppercase',
-										fontSize: '0.65rem',
-									}}>
-									La Mecánica del Corazón
-								</div>
-								<div style={{ width: '40px', height: '1px', background: `${cur.accent}60`, margin: '0 auto 16px' }} />
 								<p
 									style={{
 										fontFamily: "'Crimson Text',serif",
